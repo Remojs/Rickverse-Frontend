@@ -1,0 +1,90 @@
+.navbar {
+    background-color: var(--elements-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-div {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.nav-btn-link{
+    text-decoration: none;
+    color: var(--b);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+}
+
+.searchbar-div {
+    display: flex;
+    gap: 10px;
+}
+
+.searchbar-input {
+    background-color: var(--searchbar-bg);
+    color: var(--w);
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px var(--btn-color) solid;
+    border-radius: 5px;
+    width: 230px;
+}
+
+.searchbar-button {
+    background-color: var(--btn-color);
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    color: var(--btn-text);
+    border: 1px var(--btn-border) solid;
+}
+
+
+.searchbar-button:hover {
+    background-color: var(--btn-color-hv);
+}
+
+.nav-img {
+    height: 40px;
+    width: 40px;
+    animation-duration: 30s;
+    animation: girar 30s infinite;
+}
+
+.nav-form{
+    display: flex;
+    align-items: center;
+}
+
+nav div button span{
+    display: none;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    padding: 0.5rem;
+    background-color: var(--btn-text);
+    color: var(--b);
+    font-size: 0.8rem;
+}
+
+nav div button:hover span{
+    display: block;
+}
+

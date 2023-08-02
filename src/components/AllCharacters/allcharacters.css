@@ -1,0 +1,36 @@
+.pagination-btnbox{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 3px 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    background-color: var(--btn-color);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-icon{
+    margin: 2px 15px 0px 15px;
+}
+
+.allchars-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    padding: 1rem; 
+}
+
+

@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.detail-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 700px;
+    background: var(--cards-bg); 
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.detail-box{
+    background-color: var(--cards-bg-in);
+    border-radius: 8px;
+    height: 425px;
+    width: 675px;
+    margin: 10px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-img{
+    border-radius: 100%;
+    margin: 5px;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    box-shadow: 11px 11px 14px 1px rgba(88,95,87,0.49);
+    -webkit-box-shadow: 11px 11px 14px 1px rgba(88,95,87,0.49);
+    -moz-box-shadow: 11px 11px 14px 1px rgba(88,95,87,0.49);
+}
+
+.imgbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.info{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    color: var(--span-detail);
+    font-size: 25px;
+    text-align: center;
+}
+
+tbody{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 300px;
+}
+
+.result{
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.info-name{
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--title-detail);
+}
+
+.episodes-btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.episodes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    padding: 1rem; 
+    color: var(--w);
+}
+
+.episode-bubble{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    background-color: var(--title-detail);
+    border-radius: 100%;
+    font-size: 10px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.episodes-box{
+    margin-bottom: 40px;
+}

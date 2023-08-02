@@ -1,0 +1,33 @@
+.select-filter{
+    padding: 3px 6px;
+    margin: 0px 10px;
+    font-size: 12px;
+    border: 1px solid var(--btn-color);
+    border-radius: 3px;
+    background-color: var(--elements-background);
+    color: var(--w);
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+select:focus {
+    border: 2px solid var(--btn-color);
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select option {
+    padding: 10px;
+}
+
+.select-container{
+    background-color: var(--elements-background);
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
