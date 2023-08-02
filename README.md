@@ -19,7 +19,7 @@ Para utilizar la aplicación, Loguearse con el usuario (Email: Thiagozambonini24
 ## Enlaces
 - [API de Rick y Morty](https://rickandmortyapi.com/)
 - [Link del Sitio Web](https://rickandmortyapi.com/)
-[![Mi perfil de LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue)](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
+- [Mi perfil de LinkedIn](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
 
 ## INGLES
 
@@ -42,4 +42,4 @@ To use the application, log in with the user (Email: Thiagozambonini24@gmail.com
 ## Links
 - [Rick and Morty API](https://rickandmortyapi.com/)
 - [Website Link](https://rickandmortyapi.com/)
-[[My LinkedIn profile](https://img.shields.io/badge/LinkedIn-Perfil-blue)](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
+- [My LinkedIn profile](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
