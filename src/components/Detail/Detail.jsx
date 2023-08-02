@@ -19,7 +19,7 @@ const Detail = () => {
   const episodeSplitter = (ep) => ep.split("/").pop();
 
   useEffect(() => {
-    axios(`http://localhost:3001/rickandmorty/character/${id}`)
+    axios(`https://rickverse-backend-cive-dev.fl0.io/rickandmorty/character/${id}`)
     .then(response => response.data)
     .then((data) => {
         if (data.name) setCharacter(data) 

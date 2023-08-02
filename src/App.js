@@ -11,7 +11,7 @@ import Form from './components/Form/Form'
 import Favorites from './components/Favorites/Favorites';
 import AllCharacters from './components/AllCharacters/AllCharacters';
 
-const URL = 'http://localhost:3001/rickandmorty/login/';
+const URL = 'https://rickverse-backend-cive-dev.fl0.io/rickandmorty/login/';
 
 let App = () => {
 
@@ -30,7 +30,7 @@ const handleToggle = () => {
 // SEARCH FUNCTION API
 const onSearch = async (id) => {
       try{
-         const res = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+         const res = await axios(`https://rickverse-backend-cive-dev.fl0.io/rickandmorty/character/${id}`)
          const data = res.data
             if (data.name){
                const characterExists = characters.filter((char) => char.id === data.id)
