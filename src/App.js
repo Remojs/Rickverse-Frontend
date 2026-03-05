@@ -11,8 +11,6 @@ import Form from './components/Form/Form'
 import Favorites from './components/Favorites/Favorites';
 import AllCharacters from './components/AllCharacters/AllCharacters';
 
-const URL = 'https://rickverse-backend.onrender.com/rickandmorty/login/';
-
 let App = () => {
 
 const [characters, setCharacters] = useState([])
@@ -85,7 +83,7 @@ useEffect(() => {
 
 useEffect(() => {
    !access && navigate('/')
-}, [access])
+}, [access, navigate])
 
 //RENDER
    return (
