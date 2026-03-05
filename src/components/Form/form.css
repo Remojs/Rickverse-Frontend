@@ -88,6 +88,20 @@
     color: #c90202;
 }
 
+.hint {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    color: var(--form-text);
+    opacity: 0.6;
+    margin: 4px 0 0 0;
+    text-align: center;
+}
+
+.hint span {
+    color: var(--form-green);
+    font-weight: bold;
+}
+
 .form-nav-imgword{
     height: 80px;
     width: 150px;

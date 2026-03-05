@@ -54,11 +54,29 @@
     font-weight: 500;
     color: var(--btn-text);
     border: 1px var(--btn-border) solid;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.searchbar-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 
-.searchbar-button:hover {
-    background-color: var(--btn-color-hv);
+.btn-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid transparent;
+    border-top-color: var(--btn-text);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
 .nav-img {

@@ -58,6 +58,9 @@ return (
             </div>
             {errors.pass && <p className='error'> {errors.pass} </p>}
             <button className='submit' disabled={!userData.email || !userData.pass || errors.email || errors.pass}> Submit </button>
+            <p className='hint'>
+                <span>Usuario:</span> Thiagozambonini24@gmail.com &nbsp;|&nbsp; <span>Contraseña:</span> Thiago123
+            </p>
         </div>
     </form>
 </div>

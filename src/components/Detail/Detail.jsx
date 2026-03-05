@@ -19,13 +19,13 @@ const Detail = () => {
   const episodeSplitter = (ep) => ep.split("/").pop();
 
   useEffect(() => {
-    axios(`https://rickverse-backend-cive-dev.fl0.io/rickandmorty/character/${id}`)
+    axios(`https://rickverse-backend.onrender.com/rickandmorty/character/${id}`)
     .then(response => response.data)
     .then((data) => {
         if (data.name) setCharacter(data) 
         else window.alert('¡No hay personaje con este ID!');
       });
-      return setCharacter({}); 
+      return () => setCharacter({}); 
     }, [id]);
 
 

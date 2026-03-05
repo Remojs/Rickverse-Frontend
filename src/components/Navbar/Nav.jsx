@@ -3,7 +3,7 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import rymship from './rym-ship.png'
 import './navbar.css'
 
-const Nav = ({ onSearch, setAccess, access, handleToggle, isDarkMode }) => {
+const Nav = ({ onSearch, setAccess, access, handleToggle, isDarkMode, loadingSearch }) => {
 
   const renderNav = useLocation().pathname !== '/';
   const navigate = useNavigate();
@@ -17,10 +17,9 @@ const Nav = ({ onSearch, setAccess, access, handleToggle, isDarkMode }) => {
   return (
     <nav className='navbar'> 
         { renderNav ? ( <> 
-        <SearchBar onSearch={onSearch}/>
+        <SearchBar onSearch={onSearch} loadingSearch={loadingSearch}/>
         <div className="nav-div">
           <button className="nav-btn"> <NavLink to='allcharacters' className="nav-btn-link">  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ isDarkMode ? '#524334' : '#7ABFB8'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg> <span className='title-hover'> All Characters </span> </NavLink></button>
-          <button className="nav-btn"> <NavLink to='about' className="nav-btn-link">  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ isDarkMode ? '#524334' : '#7ABFB8'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg> <span className='title-hover'> About </span> </NavLink></button>
           <button className="nav-btn"> <NavLink to='home' className="nav-btn-link"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ isDarkMode ? '#524334' : '#7ABFB8'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> </NavLink> <span className='title-hover'> Home </span> </button> 
           <button className="nav-btn"> <NavLink to='favorites' className="nav-btn-link"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ isDarkMode ? '#524334' : '#7ABFB8'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span className='title-hover'> Favorites </span> </NavLink> </button> 
           <button className="nav-btn" onClick={handleLogOut}> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={ isDarkMode ? '#524334' : '#7ABFB8'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3"/></svg> <span className='title-hover'> Log Out </span> </button> 

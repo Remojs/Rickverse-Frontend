@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const addFav = (character) => {
-    const endpoint = 'http://localhost:3001/rickandmorty/fav';
+    const endpoint = 'https://rickverse-backend.onrender.com/rickandmorty/fav';
 
     return async (dispatch) => {
         try {
@@ -20,7 +20,7 @@ export const addFav = (character) => {
 };
 
 export const removeFav = (id) => {
-    const endpoint = `http://localhost:3001/rickandmorty/fav/${id}`;
+    const endpoint = `https://rickverse-backend.onrender.com/rickandmorty/fav/${id}`;
     return async (dispatch) => {
         try {
             const { data } = await axios.delete(endpoint);

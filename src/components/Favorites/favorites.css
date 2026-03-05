@@ -1,14 +1,20 @@
 .select-filter{
-    padding: 3px 6px;
-    margin: 0px 10px;
-    font-size: 12px;
+    appearance: none;
+    padding: 6px 28px 6px 12px;
+    margin: 0px 6px;
+    font-size: 11px;
+    font-family: 'Orbitron', sans-serif;
     border: 1px solid var(--btn-color);
-    border-radius: 3px;
-    background-color: var(--elements-background);
-    color: var(--w);
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--btn-color);
     cursor: pointer;
     outline: none;
     text-align: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%237ABFB8' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    transition: border-color 0.2s;
 }
 
 select:focus {
@@ -21,11 +27,13 @@ select::-ms-expand {
 
 select option {
     padding: 10px;
+    background-color: var(--elements-background);
+    color: var(--w);
 }
 
 .select-container{
     background-color: var(--elements-background);
-    height: 35px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
