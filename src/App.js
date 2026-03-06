@@ -54,18 +54,9 @@ const onClose = (id) => {
 }
 
 //LOGIN FUNCTION
-const login = async (userData) => {
-   try {
-      const { data } = await axios.get(`https://rickverse-backend.onrender.com/rickandmorty/login/?email=${userData.email}&password=${userData.pass}`)
-      if (data.access) {
-         setAccess(true)
-         navigate('/home')
-      } else {
-         toast.error('Usuario o contraseña incorrectos')
-      }
-   } catch (error) {
-      toast.error('Error al iniciar sesión')
-   }
+const login = () => {
+   setAccess(true)
+   navigate('/home')
 }
 
 const getAllCharacters = async(url) => {
